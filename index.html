@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <!--        TODO : ajouter la police Levi Window-->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<!--button to open a modal-->
+<div class="container">
+    <button id="myBtn"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg"
+                            alt="logo windows 95" class="logo-btn" width="90px"></button>
+</div>
+<!--modal comme les fenetres de windows95-->
+<dialog id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <div class="modal-title">
+                <!--            logo windows 95-->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg"
+                     class="logo"
+                     alt="logo windows 95" width="50px">
+                <span class="title">Titre de la modal</span>
+                <div class="actions">
+                    <button class="reduce">&minus;</button>
+                    <button class="fullscreen">&#9643;</button>
+                    <button class="close">&times;</button>
+                </div>
+            </div>
+            <div class="modal-nav-bar">
+                <!--            Souligner une lettre qui servira de reccourci-->
+                <button class="nav-bar-item"><u>F</u>ichier</button>
+                <button class="nav-bar-item"><u>E</u>dition</button>
+                <button class="nav-bar-item"><u>A</u>ffichage</button>
+                <button class="nav-bar-item">A<u>i</u>de</button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="gallery">
+                <img src="image1.png" alt="Description de l'image 1">
+                <img src="image2.png" alt="Description de l'image 2">
+                <img src="image3.png" alt="Description de l'image 3">
+                <!-- Ajoutez autant d'images que vous le souhaitez -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span class="first">40 Projects</span>
+            <span class="second"></span>
+            <span class="third">Maxence's Site</span>
+        </div>
+    </div>
+</dialog>
+</body>
+<script src="script.js"></script>
+</html>
